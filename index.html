@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Icon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <div id="navbar" class="navbar">
+      <ul id="navbar-items" class="navbar__items">
+        <li class="list__item">Home</li>
+        <li class="list__item">About</li>
+        <li class="list__item">Menu</li>
+        <li class="list__item">Contact</li>
+      </ul>
+      <img onclick="accountMenu()" class="profile-image" src="profile.jpg" alt="profile picture">
+    </div>
+    <!-- navbar end -->
+
+    <!-- account menu start -->
+    <div id="account__menu" class="menu-container account-menu padd-15 hidden">
+        <div class="acount-menu__details">
+            <div class="account-menu__personal-details">
+                <img class="menu-profile-image" src="profile.jpg" alt="profile picture">
+                <div class="menu-details__personal-info">
+                    <h3 class="personal-info__name">Shmas Abbasi</h3>
+                    <p class="personal-info__email">shams.abbasi@gmail.com</p>
+                </div>
+            </div>
+            <button onclick="accountManagement()" class="menu-details__btn btn">Manage</button>
+        </div>
+        <div class="account-menu__interests">
+            <h2 class="account-menu__interests-title">interests</h2>
+            <div class="account-menu__interests-items">
+                <p class="account-menu__interest-item">Science</p>
+                <p class="account-menu__interest-item">Bussiness</p>
+                <p class="account-menu__interest-item">Education</p>
+                <p class="account-menu__interest-item">Tecknology</p>
+                <p class="account-menu__interest-item">Politics</p>
+                <p class="account-menu__interest-item">Economy</p>
+            </div>
+            <div class="interests__btns">
+              <button onclick="accountMenuHidder()" class="btn">Close <i class="fa-solid fa-multiply"></i></button>
+              <button onclick="interestsEdit()" class="btn">Edit <i class="fa-solid fa-pen"></i></butto>
+            </div>
+        </div>
+    </div>
+    <div id="account__management" class=" menu-container account-management padd-15 hidden">
+      <div class="account__management-profile">
+        <img class="management-profile-image" src="profile.jpg" alt="profile picture">
+      </div>
+      <div class="account__management-items">
+        <div class="account__management-item">
+          <p>Name: <span>Shmas Abbasi</span></p>
+          <button class="btn"><i class="fa-solid fa-pen"></i></button>
+        </div>
+        <div class="account__management-item">
+          <p>Email: <span>shams.abbasi@gmail.com</span></p>
+          <button class="btn"><i class="fa-solid fa-pen"></i></button>
+        </div>
+        <div class="account__management-item">
+          <p>User-name: <span>shamsabbasi</span></p>
+          <button class="btn"><i class="fa-solid fa-pen"></i></button>
+        </div>
+      </div>
+      <div class="interests__btns">
+        <button onclick="accountManagementHidder()" class="btn">Close <i class="fa-solid fa-multiply"></i></button>
+        <button class="btn">Save <i class="fa-solid fa-save"></i></butto>
+      </div>
+    </div>
+    <div id="interests-edit" class=" menu-container account-menu__interests-edit padd-15 hidden">
+      <h2 class="account-menu__interests-title-edit">interests</h2>
+      <div class="account-menu__interests-items-edit">
+          <p class="account-menu__interest-item account-menu__interest-item-edit">Science <i class="fa-solid fa-minus interests-remove-icon"></i></p>
+          <p class="account-menu__interest-item account-menu__interest-item-edit">Bussiness <i class="fa-solid fa-minus interests-remove-icon"></i></p> 
+          <p class="account-menu__interest-item account-menu__interest-item-edit">Education <i class="fa-solid fa-minus interests-remove-icon"></i></p>
+          <p class="account-menu__interest-item account-menu__interest-item-edit">Tecknology <i class="fa-solid fa-minus interests-remove-icon"></i></p>
+          <p class="account-menu__interest-item account-menu__interest-item-edit">Politics <i class="fa-solid fa-minus interests-remove-icon"></i></p>
+          <p class="account-menu__interest-item account-menu__interest-item-edit">Economy <i class="fa-solid fa-minus interests-remove-icon"></i></p>
+      </div>
+      <div class="interests__btns-edit">
+        <button onclick="interestsEditHidder()" class="btn">Close <i class="fa-solid fa-multiply"></i></button>
+        <button class="btn">Add <i class="fa-solid fa-add"></i></butto>
+      </div>
+  </div>
+    <!-- account menu end -->
+    <script src="script.js"></script>
+  </body>
+</html>

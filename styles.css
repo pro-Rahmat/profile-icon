@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes slideSection{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
+.padd-15{
+    padding: 15px;
+}
+
+.hidden{
+    display: none;
+}
+
+.btn{
+    color: white;
+    height: 40px;
+    background-color: transparent;
+    background-image: linear-gradient(-90deg, #b46cfd, #5C469C);
+    border: 1px solid #0C134F;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.btn:hover{
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+.navbar{
+    height: 55px;
+    background-image: linear-gradient(45deg,#5C469C, #0C134F);
+    color:whitesmoke;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 39px;
+}
+.navbar__items{
+    display: flex;
+    justify-content: space-around;
+    flex: 0 0 50%;
+}
+
+
+.list__item{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.profile-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.profile-image:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+
+
+.menu-container{
+    background: #0C134F;
+    width: 350px;
+    height: 250px;
+    position: fixed;
+    right: 0;
+    border-radius: 5px;
+    top: 0;
+    animation: slideSection 0.5s ease;
+}
+
+.acount-menu__details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-menu__personal-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-profile-image{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.menu-details__personal-info{
+    padding: 10px;
+    color:white;
+}
+
+.account-menu__interests{
+    margin: 10px 0 0;
+}
+
+
+
+
+.interests__btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.interests__btns .btn{
+    flex: 0 0 49%;
+
+}
+
+.account-menu__interests{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.account-menu__interests-items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 7px 7px;
+    margin: 5px 0 12px 0;
+}
+  
+.account-menu__interest-item {
+    color: white;
+    background-color: #5C469C;
+    background-image: linear-gradient(90deg, #1D267D, #5C469C);
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.account__management-profile{
+    text-align: center;
+}
+
+.management-profile-image{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.account__management-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 0 2px 0 ;
+}
+
+.account__management-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.account__management-item p{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.account__management-item p span{
+    font-weight: 400;
+    color: #cccccc;
+}
+
+.account__management-item button{
+    background-image: none;
+}
+
+.account-management-close{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 20px;
+}
+
+.account-menu__interests-edit{
+    color: white;
+}
+
+.account-menu__interests-title-edit{
+    margin: 10px 0 0;
+}
+
+.account-menu__interests-items-edit{
+    display: grid;
+    grid-template-columns:auto 49%;
+    grid-gap: 7px 7px;
+    margin: 5px 0 12px 0;
+}
+
+.account-menu__interest-item-edit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interests__btns-edit{
+    display: flex;
+    justify-content: space-between;
+}
+
+.interests__btns-edit button{
+    flex:  0 0 49%;
+}
+
+.interests-remove-icon{
+    font-size: 10px;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    padding: 2px 3px;
+}
